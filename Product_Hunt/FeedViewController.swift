@@ -25,8 +25,14 @@ class FeedViewController: UIViewController {
         feedTableView.dataSource = self
         
         func updateFeed() {
+            // call our network manager's getPosts method to update our feed with posts
             networkManager.getPosts() { result in
-                self.posts = result
+                switch result {
+                case let .success(posts):
+                    self.posts = posts
+                case let .failure(error):
+                    print(error)
+                }
             }
         }
         updateFeed()

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A405D85926EBEF2000D0363E /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405D85826EBEF2000D0363E /* CommentsViewController.swift */; };
 		A405D85B26EBF24400D0363E /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405D85A26EBF24400D0363E /* CommentTableViewCell.swift */; };
+		A405D85D26EC024C00D0363E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405D85C26EC024C00D0363E /* Comment.swift */; };
 		A416668426E93DD5006CDEB9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416668326E93DD5006CDEB9 /* Post.swift */; };
 		A416668626E942AE006CDEB9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416668526E942AE006CDEB9 /* PostTableViewCell.swift */; };
 		A416668826E95909006CDEB9 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416668726E95909006CDEB9 /* NetworkManger.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		A405D85826EBEF2000D0363E /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		A405D85A26EBF24400D0363E /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		A405D85C26EC024C00D0363E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A416668326E93DD5006CDEB9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A416668526E942AE006CDEB9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		A416668726E95909006CDEB9 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				A4DD56E826D70679007A82B4 /* Main.storyboard */,
 				A405D85A26EBF24400D0363E /* CommentTableViewCell.swift */,
 				A405D85826EBEF2000D0363E /* CommentsViewController.swift */,
+				A405D85C26EC024C00D0363E /* Comment.swift */,
 				A416668526E942AE006CDEB9 /* PostTableViewCell.swift */,
 				A4DD56EB26D7067E007A82B4 /* Assets.xcassets */,
 				A4DD56ED26D7067E007A82B4 /* LaunchScreen.storyboard */,
@@ -280,6 +283,7 @@
 				A416668826E95909006CDEB9 /* NetworkManger.swift in Sources */,
 				A4DD56E526D70679007A82B4 /* SceneDelegate.swift in Sources */,
 				A416668426E93DD5006CDEB9 /* Post.swift in Sources */,
+				A405D85D26EC024C00D0363E /* Comment.swift in Sources */,
 				A416668626E942AE006CDEB9 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
