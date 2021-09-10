@@ -18,7 +18,6 @@ class FeedViewController: UIViewController {
     }
     var networkManager = NetworkManager()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,5 +55,16 @@ extension FeedViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 extension FeedViewController: UITableViewDelegate {
-    // Code to handle cell events goes here...
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Get the storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        // Get the commentsView from the storyboard
+        guard let commentsView = storyboard.instantiateViewController(withIdentifier: "commentsView") as? CommentsViewController else {
+            return
+        }
+        // add mock comments
+        commentsView.comments = ["Blah blah blah!", "Good app.", "Wow."]
+        navigationController?.pushViewController(commentsView, animated: true)
+    }
 }
