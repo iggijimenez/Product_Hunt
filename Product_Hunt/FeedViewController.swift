@@ -16,6 +16,8 @@ class FeedViewController: UIViewController {
             feedTableView.reloadData()
         }
     }
+    
+    var postID: Int!
     var networkManager = NetworkManager()
     
     override func viewDidLoad() {
@@ -61,16 +63,21 @@ extension FeedViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 extension FeedViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      // provide a fixed size
+      return 250
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let post = posts[indexPath.row]
         // Get the storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         // Get the commentsView from the storyboard
         guard let commentsView = storyboard.instantiateViewController(withIdentifier: "commentsView") as? CommentsViewController else {
             return
         }
-        // add mock comments
-        commentsView.comments = ["Blah blah blah!", "Good app.", "Wow."]
+        // set the post id for the comments
+        commentsView.postID = post.id
         navigationController?.pushViewController(commentsView, animated: true)
     }
 }
